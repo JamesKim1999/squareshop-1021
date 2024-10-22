@@ -1,6 +1,10 @@
 main
 {
     background-color: paleturquoise;
+    /*top bottom left right*/
+    /*margin: 10px 20 px 30px 40 px;*/
+    /*top and bottom/ left and right*/
+    margin: 50px 5%;
 }
 header
 {
@@ -10,5 +14,104 @@ header
 footer
 {
     background-color: navy;
-    height: 50px;
+    height: 100px;
+}
+body
+{
+    margin: 0px;
+    font-family: 'Helvetica';
+}
+.square
+{
+    background-color: white;
+    height: 300px;
+    font-size: 20px;
+    display: flex; 
+    /*centers horizontally*/
+    justify-content: center;
+    /*centers vertically*/
+    align-items: center;
+}
+.red-square
+{
+    background-color: firebrick;
+    color: white;
+}
+.yellow-square
+{
+    background-color: yellow;
+    border-width: 5px;
+    border-style: solid;
+    border-color: orange;
+    /*shorthand for border*/
+    border: 5px solid orange;
+    box-sizing: border-box;
+}
+.green-square
+{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+.blue-square
+{
+    background-color: blue;
+    color: white;
+}
+#welcome
+{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+#welcome .red-square
+{
+    width: 66%;
+    height: 600px;
+}
+#welcome .welcome-text
+{
+    width: 33%;
+    margin: ;
+}
+#featured div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0px 10px;
+    gap: 10px;
+}
+#featured .red-square
+{
+    /* where it starts, how much it spans*/
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+}
+#featured .yellow-square
+{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+#featured .green-square
+{
+    grid-column: 2 / span 2;
+    grid-row: 1 span 1;
+}
+#featured .blue-square
+{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+#showcase div
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+#showcase article
+{
+    width: 500px;
 }
